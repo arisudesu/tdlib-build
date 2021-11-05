@@ -11,7 +11,7 @@ del /F /S /Q build
 mkdir build
 cd build
 cmake -A x64 -DCMAKE_INSTALL_PREFIX:PATH=../tdlib -DCMAKE_TOOLCHAIN_FILE:FILEPATH=../vcpkg/scripts/buildsystems/vcpkg.cmake ..
-cmake --build . --target install --config Release
+cmake --build . --target install --config Release -j 4
 cd ..
 cd ..
 dir td\tdlib
