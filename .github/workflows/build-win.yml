@@ -1,0 +1,20 @@
+name: Windows 64-bit
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: windows-2019
+    name: Build
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Run build script
+        run: build.bat
+        shell: cmd
+
+      - uses: actions/upload-artifact@v2
+        with:
+          name: builds
+          path: td/tdlib
