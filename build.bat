@@ -2,6 +2,7 @@
 
 git clone https://github.com/tdlib/td.git
 cd td
+git checkout 92c2a9c4e521df720abeaa9872e1c2b797d5c93f
 git clone https://github.com/Microsoft/vcpkg.git
 cd vcpkg
 call bootstrap-vcpkg.bat
