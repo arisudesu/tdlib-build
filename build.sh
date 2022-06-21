@@ -6,7 +6,7 @@ sudo apt-get upgrade
 sudo apt-get install make git zlib1g-dev libssl-dev gperf php-cli cmake g++
 git clone https://github.com/tdlib/td.git
 cd td
-git checkout 054a823c1a812ee3e038f702c6d8ba3e6974be9c
+git checkout 7eabd8ca60de025e45e99d4e5edd39f4ebd9467e
 rm -rf build
 mkdir build
 cd build
